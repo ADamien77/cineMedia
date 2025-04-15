@@ -4,19 +4,19 @@ header {
     align-items: center;
     padding: 20px;
     background-color: green;
-    height: 100px;
+    height: 60px;
 }
 
 header img {
-    width: 10%;
-    height: 100px;
+    width: 5%;
+    height: 100%;
 }
 
 nav {
     display: flex;
     justify-content: center;
     margin: auto;
-    width: 90%;
+    width: 100%;
 }
 
 nav ul { 
@@ -27,16 +27,101 @@ nav ul {
 }
 
 nav li {
-    margin-right: 20px;
+    margin: 20px;
 }
 
 nav a {
     text-decoration: none;
     color: #333;
+    font-weight: bold;
 }
 
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+}
+
+main {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px; 
+    text-align: center;
+    background-color: #f2f2f2;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin: 0;
+}
+
+div a {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}  
+
+form {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    height: 650px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 30px;
 }
